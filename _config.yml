@@ -79,4 +79,5 @@ theme: landscape
 deploy:
   type: git
   repo: https://github.com/poorbug/poorbug.github.io.git
+  branch: master
   message: initialize
