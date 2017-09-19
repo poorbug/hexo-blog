@@ -53,14 +53,20 @@ $logo-text
   @extend $logo-text
   font-size: logo-size
   letter-spacing: 2px
+  @media mq-mobile
+    font-size: 60px
 
 #subtitle
   @extend $logo-text
   font-size: subtitle-size
   letter-spacing: 1px
+  @media mq-mobile
+    font-size: 16px
 
 #subtitle-wrap
   margin-top: subtitle-size
+  @media mq-mobile
+    margin-top: 0
 
 #main-nav
   float: left

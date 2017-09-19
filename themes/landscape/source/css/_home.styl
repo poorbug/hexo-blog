@@ -1,0 +1,23 @@
+.index-list
+  margin: 100px 0
+  li
+    margin: 20px 0
+    a
+      display: block
+      time
+        float: right
+        font-size: 16px
+        opacity: .5
+    a::before
+      content: "-"
+      display: inline-block
+      margin-right: 10px
+
+  @media mq-mobile
+    margin: 50px 0
+    li
+      margin: 10px 0
+      a
+        font-size: 16px
+      time
+        display: none

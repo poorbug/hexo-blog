@@ -1,1 +1,10 @@
-<%- partial('_partial/archive', {pagination: 2, index: true}) %>
+<ul class="index-list">
+  <% page.posts.each(function(post, index){ %>
+    <li>
+      <a class="article-title" href="<%- url_for(post.path) %>">
+        <%= post.title %>
+        <time datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><%= date(post.date, null) %></time>
+      </a>
+    </li>
+  <% }) %>
+</ul>
