@@ -5,8 +5,6 @@ tags:
 - 正则表达式
 ---
 
-# 正则
-
 [Javascript 标准参考教程 - RegExp对象 by 阮一峰](http://javascript.ruanyifeng.com/stdlib/regexp.html)
 
 
