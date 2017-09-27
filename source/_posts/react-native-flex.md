@@ -132,7 +132,6 @@ container: {
 			</code>
 		</pre>
 	</div>
-	
 	<div style='flex: 1; margin: 0 20px'>
 		<img src='http://rationalappdev.com/wp-content/uploads/2016/10/Screenshot-2016-10-02-08.05.40-1.png' />
 		<pre>
@@ -310,8 +309,7 @@ tabBarButton: {
 `flex-start`（默认值）- 子元素分布在起点处。
 
 <div>
-	<img src='http://rationalappdev.com/wp-content/uploads/2016/10/flex-start-1.png' width='40%' style='display: inline-block;'/>
-	<pre style='display: inline-block; width: 40%; margin-left: 5%; vertical-align: middle;'>
+	<img src='http://rationalappdev.com/wp-content/uploads/2016/10/flex-start-1.png' width='40%' style='display: inline-block;'/><pre style='display: inline-block; width: 40%; margin-left: 5%; vertical-align: middle;'>
 		<code>
 tabBar: {
 	flexDirection: 'row',
@@ -324,8 +322,7 @@ tabBar: {
 `center` - 子元素居中放置。
 
 <div>
-	<img src='http://rationalappdev.com/wp-content/uploads/2016/10/center-1.png' width='40%' style='display: inline-block;'/>
-	<pre style='display: inline-block; width: 40%; margin-left: 5%; vertical-align: middle;'>
+	<img src='http://rationalappdev.com/wp-content/uploads/2016/10/center-1.png' width='40%' style='display: inline-block;'/><pre style='display: inline-block; width: 40%; margin-left: 5%; vertical-align: middle;'>
 		<code>
 tabBar: {
  	flexDirection: 'row',
@@ -338,8 +335,7 @@ tabBar: {
 `flex-end` - 子元素分布在终点处。
 
 <div>
-	<img src='http://rationalappdev.com/wp-content/uploads/2016/10/flex-end-1.png' width='40%' style='display: inline-block;'/>
-	<pre style='display: inline-block; width: 40%; margin-left: 5%; vertical-align: middle;'>
+	<img src='http://rationalappdev.com/wp-content/uploads/2016/10/flex-end-1.png' width='40%' style='display: inline-block;'/><pre style='display: inline-block; width: 40%; margin-left: 5%; vertical-align: middle;'>
 		<code>
 tabBar: {
 	flexDirection: 'row',
@@ -352,8 +348,7 @@ tabBar: {
 `space-around` - 相等空间环绕子元素分布。
 
 <div>
-	<img src='http://rationalappdev.com/wp-content/uploads/2016/10/space-around-1.png' width='40%' style='display: inline-block;'/>
-	<pre style='display: inline-block; width: 40%; margin-left: 5%; vertical-align: middle;'>
+	<img src='http://rationalappdev.com/wp-content/uploads/2016/10/space-around-1.png' width='40%' style='display: inline-block;'/><pre style='display: inline-block; width: 40%; margin-left: 5%; vertical-align: middle;'>
 		<code>
 tabBar: {
 	flexDirection: 'row',
@@ -366,8 +361,7 @@ tabBar: {
 `space-between` — 子元素贴边均匀分布。
 
 <div>
-	<img src='http://rationalappdev.com/wp-content/uploads/2016/10/space-between-1.png' width='40%' style='display: inline-block;'/>
-	<pre style='display: inline-block; width: 40%; margin-left: 5%; vertical-align: middle;'>
+	<img src='http://rationalappdev.com/wp-content/uploads/2016/10/space-between-1.png' width='40%' style='display: inline-block;'/><pre style='display: inline-block; width: 40%; margin-left: 5%; vertical-align: middle;'>
 		<code>
 tabBar: {
 	flexDirection: 'row',
@@ -384,8 +378,7 @@ tabBar: {
 `flex-start` — 子元素在起点处对齐。
 
 <div>
-	<img src='http://rationalappdev.com/wp-content/uploads/2016/10/align-flex-start-1.png' width='40%' style='display: inline-block;'/>
-	<pre style='display: inline-block; width: 40%; margin-left: 5%; vertical-align: middle;'>
+	<img src='http://rationalappdev.com/wp-content/uploads/2016/10/align-flex-start-1.png' width='40%' style='display: inline-block;'/><pre style='display: inline-block; width: 40%; margin-left: 5%; vertical-align: middle;'>
 		<code>
 tabBar: {
 	flexDirection: 'row',
@@ -399,8 +392,7 @@ tabBar: {
 `center` — 子元素居中对齐。
 
 <div>
-	<img src='http://rationalappdev.com/wp-content/uploads/2016/10/align-center-1.png' width='40%' style='display: inline-block;'/>
-	<pre style='display: inline-block; width: 40%; margin-left: 5%; vertical-align: middle;'>
+	<img src='http://rationalappdev.com/wp-content/uploads/2016/10/align-center-1.png' width='40%' style='display: inline-block;'/><pre style='display: inline-block; width: 40%; margin-left: 5%; vertical-align: middle;'>
 		<code>
 tabBar: {
 	flexDirection: 'row',
@@ -414,8 +406,7 @@ tabBar: {
 `flex-end` — 子元素在终点处对齐。
 
 <div>
-	<img src='http://rationalappdev.com/wp-content/uploads/2016/10/align-flex-end-1.png' width='40%' style='display: inline-block;'/>
-	<pre style='display: inline-block; width: 40%; margin-left: 5%; vertical-align: middle;'>
+	<img src='http://rationalappdev.com/wp-content/uploads/2016/10/align-flex-end-1.png' width='40%' style='display: inline-block;'/><pre style='display: inline-block; width: 40%; margin-left: 5%; vertical-align: middle;'>
 		<code>
 tabBar: {
 	flexDirection: 'row',
