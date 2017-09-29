@@ -1,6 +1,6 @@
 <header id="header">
   <div id="banner"></div>
-  <div id="header-outer" class="outer">
+  <div id="header-outer" class="outer" onmousemove="headerMove(event)" onmouseout="clearMouseMove()">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
         <a href="<%- url_for() %>" id="logo"><%= config.title %></a>
@@ -23,4 +23,28 @@
       </div>
     </div>
   </div>
+
+  <script>
+    var header = document.getElementById('header-outer')
+    var midX = Math.floor(header.offsetWidth / 2)
+    var midY = Math.floor(header.offsetHeight / 2)
+    var logo = document.getElementById('logo')
+    var subtitle = document.getElementById('subtitle')
+    function headerMove(e) {
+      var movX = (midX - e.clientX) * .75
+      var movY = (midY - e.clientY) * .75
+      var movRate = Math.abs(movX / midX)
+      var blur = movRate * 20
+
+      logo.style.textShadow = movX + 'px ' + movY + 'px ' + blur + 'px rgba(255, 255, 255, ' + (1 - movRate) + ')'
+      subtitle.style.textShadow = movX + 'px ' + movY + 'px ' + blur + 'px rgba(255, 255, 255, ' + (1 - movRate) + ')'
+    }
+
+    function clearMouseMove() {
+      logo.style.textShadow = '0 0 0 white'
+      subtitle.style.textShadow = '0 0 0 white'
+    }
+  
+  </script>
+
 </header>

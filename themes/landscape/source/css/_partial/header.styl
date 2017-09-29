@@ -2,12 +2,17 @@
   height: banner-height
   position: relative
   background-color: #262a30;
+  overflow: hidden
   @media mq-mobile
     height: banner-height-m
 
 #header-outer
   height: 100%
   position: relative
+  &:hover
+    #header-title
+      a
+        transition: text-shadow .1s ease-in-out
 
 #header-inner
   position: relative
@@ -29,14 +34,8 @@
   top: 30%
   left: 0
   font-family: 'Oribitron'
-  transition: background-color .4s ease-in-out
-  a {
-    transition: color .4s ease-in-out, text-shadow .4s ease-in-out
-  }
-  a:hover {
-    color: #3194d0
-    text-shadow: 8px 8px 2px white
-  }
+  a
+    transition: text-shadow .4s ease-in-out
 
 $logo-text
   text-decoration: none
