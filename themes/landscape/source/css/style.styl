@@ -30,6 +30,22 @@ body
   -webkit-text-size-adjust: 100%
   background-image: url(../img/bg.png)
 
+blockquote
+  padding: 20px
+  margin: 0 0 24px
+  background-color: #f7f7f7;
+  border-left: 6px solid #b4b4b4;
+  font-size: 16px
+  line-height: 30px
+  p
+    margin: 0
+
+a
+  color: color-link
+  text-decoration: none
+  &:hover
+    text-decoration: underline
+
 .outer
   clearfix()
   max-width: (column-width + gutter-width) * columns + gutter-width
@@ -87,6 +103,8 @@ if sidebar is left
 @import "_partial/footer"
 @import "_partial/highlight"
 @import "_partial/mobile"
+
+@import "_partial/msgboard"
 
 if sidebar
   @import "_partial/sidebar"

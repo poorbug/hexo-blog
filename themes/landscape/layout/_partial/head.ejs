@@ -33,4 +33,8 @@
   <% } %>
   <%- css('css/style') %>
   <%- partial('google-analytics') %>
+  <script src="https://cdn.wilddog.com/sdk/js/2.5.8/wilddog-sync.js"></script>
+  <script>
+    wilddog.initializeApp({ syncURL: 'https://poorbug.wilddogio.com' })
+  </script>
 </head>

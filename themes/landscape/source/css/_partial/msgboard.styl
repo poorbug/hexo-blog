@@ -1,0 +1,129 @@
+.msgboard
+  margin-top: 128px
+  h1
+    font-size: 32px
+    margin: 48px 0 28px 0
+  h2
+    font-size: 28px
+    margin: 48px 0 24px 0
+  h3
+    font-size: 24px
+    margin: 48px 0 20px 0
+  h4
+    font-size: 20px
+    margin: 48px 0 16px 0
+  h5
+    font-size: 18px
+    margin: 48px 0 12px 0
+  p
+    line-height: 1.7
+    margin: 0 0 24px 0
+  h2
+    margin-top: 0
+    padding: 0 0 16px 8px
+    border-bottom: 1px solid #999
+    font-size: 28px
+
+.msg-item
+  border-bottom: 1px dashed #999
+  padding: 32px 10px
+  background-color: rgba(255, 255, 255, .2)
+  &:last-child
+    border: none
+  h5
+    font-size: 16px
+    margin: 0 0 16px 0
+    color: #3194d0
+    span
+      font-weight: 400
+      color: #333
+      margin-left: 6px
+  h5 + p
+    color: #333
+    font-size: 14px
+    margin: 0 0 16px 0
+  p + p
+    font-size: 12px
+    color: #969696
+    float: right
+    a
+      padding: 0 8px
+      margin-left: 8px
+      cursor: pointer
+
+.cite
+  h6
+    margin: 0
+    font-size: 16px
+    span
+      margin-left: 6px
+      font-weight: 400
+  p
+    font-size: 12px
+
+
+.mymsg
+  margin: 0
+  padding: 40px 0 0 0
+  border-top: 1px solid #999
+  blockquote
+    position: relative
+    span
+      position: absolute
+      top: 0
+      right: 8px
+      font-size: 32px
+      color: #ccc
+      text-align: center
+      transform: rotate(45deg)
+      cursor: pointer
+      display: block
+      width: 32px
+      height: 32px
+      transition: color .4s ease-in-out
+      &:hover
+        color: black
+      h6
+        margin: 0
+        font-size: 16px
+      p
+        font-size: 12px
+  p
+    line-height: 32px
+    margin-bottom: 16px
+    input
+      width: 160px
+      height: 32px
+      padding: 0 12px
+      border: 1px solid #dcdcdc
+      border-radius: 4px
+      background-color: #fff
+      outline-style: none
+      color: rgb(51, 51, 51)
+      font-size: 14px
+  textarea, button
+    display: block
+  textarea
+    resize: none
+    width: 572px
+    height: 80px
+    border: 1px solid #dcdcdc
+    border-radius: 4px
+    outline-style: none
+    background-color: #fff
+    padding: 12px 16px
+    color: rgb(51, 51, 51)
+    font-size: 14px
+  button
+    min-width: 144px
+    padding: 0 20px
+    outline: none
+    cursor: pointer
+    font-size: 16px
+    color: white
+    border-radius: 4px
+    border: none
+    background-color: #3194d0
+    height: auto
+    line-height: 38px
+    margin-top: 16px
