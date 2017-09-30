@@ -1,6 +1,6 @@
-<header id="header">
+<header id="header" onmousemove="headerMove(event)" onmouseout="clearMouseMove()">
   <div id="banner"></div>
-  <div id="header-outer" class="outer" onmousemove="headerMove(event)" onmouseout="clearMouseMove()">
+  <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
         <a href="<%- url_for() %>" id="logo"><%= config.title %></a>
@@ -25,7 +25,7 @@
   </div>
 
   <script>
-    var header = document.getElementById('header-outer')
+    var header = document.getElementById('header')
     var midX = Math.floor(header.offsetWidth / 2)
     var midY = Math.floor(header.offsetHeight / 2)
     var logo = document.getElementById('logo')
