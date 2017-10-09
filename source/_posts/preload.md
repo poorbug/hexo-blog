@@ -58,9 +58,9 @@ tags:
   <link rel="stylesheet" href="/css/style.css">
   
   <!-- 加入以下三行代码 -->
-  <link rel="preload" href="https://omhr7p9e5.bkt.clouddn.com/blog/Orbitron-Black.ttf" as="font" type="font/ttf" crossorigin="anonymous">
-  <link rel="preload" href="https://omhr7p9e5.bkt.clouddn.com/blog/bg.png" as="image">
-  <link rel="preload" href="https://omhr7p9e5.bkt.clouddn.com/hexo-blog/fontawesome-webfont.woff?v=" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="//omhr7p9e5.bkt.clouddn.com/blog/Orbitron-Black.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="preload" href="//omhr7p9e5.bkt.clouddn.com/blog/bg.png" as="image">
+  <link rel="preload" href="//omhr7p9e5.bkt.clouddn.com/hexo-blog/fontawesome-webfont.woff?v=" as="font" type="font/woff" crossorigin="anonymous">
   
 </head>
 <body></body>
