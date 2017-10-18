@@ -169,7 +169,7 @@ navBar: {
 看起来比刚才的强点，但是我们想要的效果是按钮在两边，头部在中间。所以还是得加一些样式来实现。
 
 ``` javascript
-avBarButton: {
+navBarButton: {
 	color: '#FFFFFF',
 	textAlign:'center',
 	width: 64
