@@ -20,10 +20,58 @@ Flex 布局所能实现的效果其实用其他方法也能实现，但是，很
 
 > 采用 Flex 布局的元素，称为 Flex 容器（flex container）。它的所有子元素自动成为容器成员，称为 Flex 项目（flex item）。
 
-容器默认存在两根带方向的轴：主轴（main axis）和垂直于主轴的交叉轴（cross axis）。同时两个轴各有起点与终点。主轴与交叉轴是相对的，通过 `flex-direction` 来决定水平或者垂直的轴是主轴，同时也决定起点终点。
+容器默认存在两个带方向的轴：主轴（main axis）和垂直于主轴的交叉轴（cross axis）。同时两个轴各有起点与终点。主轴与交叉轴是相对的，通过 `flex-direction` 来决定水平或者垂直的轴是主轴，同时也决定起点终点。
 
 container 的 `flex-direction` 默认为 `row`，item 默认沿主轴排列。
 ![flex-direction](http://omhr7p9e5.bkt.clouddn.com/hexo-blog/flex/flexDirection.jpg)
+
+Flex 布局一个很重要的概念是 **剩余空间** 的分配。所谓 **剩余空间**，指的是 container 的主轴尺寸在减去 item 的 **既定尺寸** 后剩余的空间。**既定尺寸** 由元素的内容、width、flex-basis 决定。
+
+``` html
+<div style="font-size: 12px">
+  <style>
+    .free-space-container {
+      display: flex;
+      width: 500px;
+      background-color: #00E676;
+    }
+    .free-space-container > div {
+      border: 1px solid #ccc;
+      text-align: center;
+      background-color: #FF5722;
+    }
+  </style>
+  <div class="free-space-container">
+    <div style="width: 100px;">width: 100px;</div>
+    <div style="flex-basis: 50%;">flex-basis: 50%;</div>
+    <div>auto</div>
+    <div style="flex-grow:1;background: #42A5F5;">free space</div>
+  </div>
+</div>
+```
+
+{% raw %}
+<div style="font-size: 12px" class="html-code">
+  <style>
+    .free-space-container {
+      display: flex;
+      width: 500px;
+      background-color: #00E676;
+    }
+    .free-space-container > div {
+      border: 1px solid #ccc;
+      text-align: center;
+      background-color: #FF5722;
+    }
+  </style>
+  <div class="free-space-container">
+    <div style="width: 100px;">width: 100px;</div>
+    <div style="flex-basis: 50%;">flex-basis: 50%;</div>
+    <div>auto</div>
+    <div style="flex-grow:1;background: #42A5F5;">free space</div>
+  </div>
+</div>
+{% endraw %}
 
 ## 属性
 
@@ -255,14 +303,14 @@ space-around | 剩余空间均分于两边
 
 注1：sum(basis) = 所有 item 的 flex-basis 和
 
-注2：主轴尺寸 - sum(basis) = 剩余空间
+注2：主轴尺寸 - (sum(basis) + width) = 剩余空间
 
 
-(3). **flex-grow**: item 所占的比例
+(3). **flex-grow**: 剩余空间分配给 item 比例
 
 值 | 含义
 --- | -----
-整数 | item 在主轴上占 container 大小的比例
+整数 | item 在主轴上占 container 剩余空间的比例
 
 ``` html
 <div style="font-size: 12px" class="html-code">
