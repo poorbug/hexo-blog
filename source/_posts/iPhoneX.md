@@ -1,8 +1,8 @@
 ---
-title: [翻译] 为 iPhone X 设计网站
+title: 翻译：为 iPhone X 设计网站
 date: 2018-01-21
 tags:
-- iPhone X
+- iPhone
 - CSS
 - env(safe-area-inset-*)
 ---

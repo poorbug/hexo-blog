@@ -1,5 +1,5 @@
 ---
-title: [翻译] 使用 Flex 布局 React Native 组件
+title: 翻译：使用 Flex 布局 React Native 组件
 date: 2017-09-20
 tags:
 - React Native
